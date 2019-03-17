@@ -1,0 +1,29 @@
+.error{
+    border: 2px solid red;
+}
+
+.hidden{
+    display: none; /* equal to hide*/
+}
+
+.item{
+    display: inline-block;
+    width: 300px;
+    border: 1px solid black;
+    background-color: #abab91;
+    padding: 3px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    height: 350px;
+    vertical-align: top;
+}
+
+.item:hover{
+    border-color: blue;
+    box-shadow: -2px 2px 4px red;
+}
+
+.item img{
+    width: 240px;
+
+}

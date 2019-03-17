@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Store Admin</title>
+    <link href='bootstrap.css' rel='stylesheet'>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<!-- create form to ask the info about the items-->
+<div>
+    <div class="alert alert-danger hidden" id="alert-error" role = "alert">Either your Brand or Description is too short</div>
+    <div class="alert alert-success hidden" id="alert-saved" role = "alert">You have saved an item</div>
+    <form>
+        <br>
+        <label>Brand</label>
+        <input type="text" id="txtBrand" placeholder="Item Brand">
+        <br>
+        <label>Description</label>
+        <input type="text" id="txtDes" placeholder="Description">
+        <br>
+        <label>Price</label>
+        <input type="text" id="txtPrice" placeholder="$0.00">
+        <br>
+        <label>Image</label>
+        <input type="text" id="txtImg" placeholder="Image url">
+        <br>
+        <label>Category</label>
+        <input type="text" id="txtCat" placeholder="Category">
+        <br>
+        <button type="button" id="btnSave" class="btn btn-md btn-success">Save Item</button>
+        <button type="reset" id="btnRes" class="btn btn-md btn-danger">Clear Form</button>
+        
+    </form>
+
+    <hr>
+
+
+    <label>Remove an Item by ID:</label>
+    <input type="text" id="txtIdToRemove"/>
+    <button id="btnRemoveOne" class="btn btn-danger">Remove an Element</button>
+    <br>
+    <label>Remove all Items by User</label>
+    <button id="btnRemoveAll" class="btn btn-danger">Remove all my Items</button>
+
+</div>
+
+<script src="jquery-3.3.1.min.js"></script>
+<script src="ManualDB.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
